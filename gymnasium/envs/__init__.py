@@ -452,6 +452,13 @@ register(
     max_episode_steps=1000,
 )
 
+register(
+    id="AntVariableLegs-v0",
+    entry_point="gymnasium.envs.mujoco:AntVariableLegsEnv",
+    max_episode_steps=1000,
+    reward_threshold=6000.0,
+)
+
 
 # --- For shimmy compatibility
 def _raise_shimmy_error(*args: Any, **kwargs: Any):
